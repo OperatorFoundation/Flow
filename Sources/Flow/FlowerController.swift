@@ -56,10 +56,10 @@ public class FlowerController
     var nextStreamIdentifier: StreamIdentifier = 0
     var streams: [StreamIdentifier:Connection] = [:]
     
-    public init(host: NWEndpoint.Host, port: NWEndpoint.Port, parameters: NWParameters, logger: Logger)
+    public init?(host: NWEndpoint.Host, port: NWEndpoint.Port, parameters: NWParameters, logger: Logger)
     {
-        self.connection = NWConnection(host: host, port: port, using: parameters)
         self.log = logger
+        self.connection = NWConnection(host: host, port: port, using: parameters)
     }
     
     public init(connection: Connection, logger: Logger)
