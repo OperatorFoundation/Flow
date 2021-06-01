@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Flow",
     platforms: [
-       .macOS(.v10_15)
+       .macOS(.v11)
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -14,10 +14,10 @@ let package = Package(
         ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.4.0"),
-        .package(url: "https://github.com/OperatorFoundation/Flower.git", from: "0.1.0"),
-        .package(url: "https://github.com/OperatorFoundation/Datable.git", from: "3.0.2"),
-        .package(url: "https://github.com/OperatorFoundation/NetworkLinux.git", from: "0.1.0"),
+        .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2"),
+        .package(url: "https://github.com/OperatorFoundation/Flower.git", from: "0.1.3"),
+        .package(url: "https://github.com/OperatorFoundation/Datable.git", from: "3.0.4"),
+        .package(url: "https://github.com/OperatorFoundation/NetworkLinux.git", from: "0.3.0"),
         ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
