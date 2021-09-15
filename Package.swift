@@ -15,9 +15,9 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2"),
-        .package(url: "https://github.com/OperatorFoundation/Flower.git", from: "0.1.3"),
-        .package(url: "https://github.com/OperatorFoundation/Datable.git", from: "3.0.4"),
-        .package(url: "https://github.com/OperatorFoundation/NetworkLinux.git", from: "0.3.0"),
+        .package(url: "https://github.com/OperatorFoundation/Flower.git", from: "0.1.17"),
+        .package(url: "https://github.com/OperatorFoundation/Datable.git", from: "3.0.6"),
+        .package(url: "https://github.com/OperatorFoundation/NetworkLinux.git", from: "0.4.1"),
         ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
