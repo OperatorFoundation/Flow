@@ -29,12 +29,7 @@ import Foundation
 import Logging
 import Flower
 import Transport
-
-#if os(Linux)
-import NetworkLinux
-#else
-import Network
-#endif
+import Net
 
 open class FlowTCPv6Connection: Connection
 {
